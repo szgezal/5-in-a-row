@@ -1,2 +1,3 @@
-# 5-in-a-row
+# Widgets
 University assignment
+Made with ITK GraphicsLib
