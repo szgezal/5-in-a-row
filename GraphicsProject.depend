@@ -1,0 +1,288 @@
+# depslib dependency file v1.0
+1650068082 source:c:\users\ocstgyvk\desktop\new folder\widgets-main\widgets-main\application.cpp
+	"widget.hpp"
+	"application.hpp"
+	<fstream>
+
+1650067687 c:\users\ocstgyvk\desktop\new folder\widgets-main\widgets-main\widget.hpp
+	"graphics.hpp"
+	"application.hpp"
+
+1650057551 c:\users\ocstgyvk\desktop\new folder\widgets-main\widgets-main\include\graphics.hpp
+	<string>
+	<vector>
+
+1650057581 c:\users\ocstgyvk\desktop\new folder\widgets-main\widgets-main\application.hpp
+	<vector>
+	"graphics.hpp"
+
+1650067153 source:c:\users\ocstgyvk\desktop\new folder\widgets-main\widgets-main\button.cpp
+	"button.hpp"
+
+1650065634 c:\users\ocstgyvk\desktop\new folder\widgets-main\widgets-main\button.hpp
+	"widget.hpp"
+
+1650063663 source:c:\users\ocstgyvk\desktop\new folder\widgets-main\widgets-main\main.cpp
+	"graphics.hpp"
+	"widget.hpp"
+	"application.hpp"
+	"spinbox.hpp"
+	"scroll_list.hpp"
+	<vector>
+	<time.h>
+
+1650067706 c:\users\ocstgyvk\desktop\new folder\widgets-main\widgets-main\spinbox.hpp
+	"widget.hpp"
+	"button.hpp"
+
+1650067751 c:\users\ocstgyvk\desktop\new folder\widgets-main\widgets-main\scroll_list.hpp
+	"widget.hpp"
+
+1650067798 source:c:\users\ocstgyvk\desktop\new folder\widgets-main\widgets-main\scroll_list.cpp
+	"scroll_list.hpp"
+
+1650064229 source:c:\users\ocstgyvk\desktop\new folder\widgets-main\widgets-main\widget.cpp
+	"widget.hpp"
+	"graphics.hpp"
+
+1650067990 source:c:\users\ocstgyvk\desktop\new folder\widgets-main\widgets-main\spinbox.cpp
+	"spinbox.hpp"
+	"widget.hpp"
+	<sstream>
+
+1650067800 source:d:\ppke\bevprog\bevprog_ii\main\bead2\widgets-main\scroll_list.cpp
+	"scroll_list.hpp"
+
+1650067752 d:\ppke\bevprog\bevprog_ii\main\bead2\widgets-main\scroll_list.hpp
+	"widget.hpp"
+
+1650631186 d:\ppke\bevprog\bevprog_ii\main\bead2\widgets-main\widget.hpp
+	"graphics.hpp"
+	"application.hpp"
+
+1650057552 d:\ppke\bevprog\bevprog_ii\main\bead2\widgets-main\include\graphics.hpp
+	<string>
+	<vector>
+
+1650623382 d:\ppke\bevprog\bevprog_ii\main\bead2\widgets-main\application.hpp
+	<vector>
+	"graphics.hpp"
+
+1650629394 source:d:\ppke\bevprog\bevprog_ii\main\bead2\widgets-main\application.cpp
+	"application.hpp"
+	"widget.hpp"
+
+1650631070 source:d:\ppke\bevprog\bevprog_ii\main\bead2\widgets-main\button.cpp
+	"button.hpp"
+
+1650631070 d:\ppke\bevprog\bevprog_ii\main\bead2\widgets-main\button.hpp
+	"widget.hpp"
+
+1650631354 source:d:\ppke\bevprog\bevprog_ii\main\bead2\widgets-main\main.cpp
+	"graphics.hpp"
+	"spinbox.hpp"
+	"dropdown.hpp"
+	<vector>
+	<time.h>
+	<fstream>
+
+1650629808 d:\ppke\bevprog\bevprog_ii\main\bead2\widgets-main\spinbox.hpp
+	"widget.hpp"
+	"button.hpp"
+
+1650630798 d:\ppke\bevprog\bevprog_ii\main\bead2\widgets-main\dropdown.hpp
+	"widget.hpp"
+	"button.hpp"
+
+1650628038 source:d:\ppke\bevprog\bevprog_ii\main\bead2\widgets-main\spinbox.cpp
+	"spinbox.hpp"
+	<sstream>
+
+1650631168 source:d:\ppke\bevprog\bevprog_ii\main\bead2\widgets-main\widget.cpp
+	"widget.hpp"
+	"graphics.hpp"
+
+1650630826 source:d:\ppke\bevprog\bevprog_ii\main\bead2\widgets-main\dropdown.cpp
+	"dropdown.hpp"
+	<sstream>
+	<math.h>
+
+1650629394 source:d:\ppke\bevprog\bevprog_ii\main\9\widgets-main\application.cpp
+	"application.hpp"
+	"widget.hpp"
+
+1650623382 d:\ppke\bevprog\bevprog_ii\main\9\widgets-main\application.hpp
+	<vector>
+	"graphics.hpp"
+
+1650057552 d:\ppke\bevprog\bevprog_ii\main\9\widgets-main\include\graphics.hpp
+	<string>
+	<vector>
+
+1650631186 d:\ppke\bevprog\bevprog_ii\main\9\widgets-main\widget.hpp
+	"graphics.hpp"
+	"application.hpp"
+
+1650631070 source:d:\ppke\bevprog\bevprog_ii\main\9\widgets-main\button.cpp
+	"button.hpp"
+
+1650631070 d:\ppke\bevprog\bevprog_ii\main\9\widgets-main\button.hpp
+	"widget.hpp"
+
+1650630826 source:d:\ppke\bevprog\bevprog_ii\main\9\widgets-main\dropdown.cpp
+	"dropdown.hpp"
+	<sstream>
+	<math.h>
+
+1650630798 d:\ppke\bevprog\bevprog_ii\main\9\widgets-main\dropdown.hpp
+	"widget.hpp"
+	"button.hpp"
+
+1651140060 source:d:\ppke\bevprog\bevprog_ii\main\9\widgets-main\main.cpp
+	"graphics.hpp"
+	"spinbox.hpp"
+	"dropdown.hpp"
+	"textreader.hpp"
+	<vector>
+	<time.h>
+	<fstream>
+
+1650629808 d:\ppke\bevprog\bevprog_ii\main\9\widgets-main\spinbox.hpp
+	"widget.hpp"
+	"button.hpp"
+
+1650628038 source:d:\ppke\bevprog\bevprog_ii\main\9\widgets-main\spinbox.cpp
+	"spinbox.hpp"
+	<sstream>
+
+1650631168 source:d:\ppke\bevprog\bevprog_ii\main\9\widgets-main\widget.cpp
+	"widget.hpp"
+	"graphics.hpp"
+
+1651144328 d:\ppke\bevprog\bevprog_ii\main\9\widgets-main\textreader.hpp
+	<widget.hpp>
+
+1651145664 source:d:\ppke\bevprog\bevprog_ii\main\9\widgets-main\textreader.cpp
+	"textreader.hpp"
+	<fstream>
+
+1650629394 source:c:\users\szgeza\desktop\ppke\bevprog\bevprog_ii\main\widgets-main\application.cpp
+	"application.hpp"
+	"widget.hpp"
+
+1650623382 c:\users\szgeza\desktop\ppke\bevprog\bevprog_ii\main\widgets-main\application.hpp
+	<vector>
+	"graphics.hpp"
+
+1650057552 c:\users\szgeza\desktop\ppke\bevprog\bevprog_ii\main\widgets-main\include\graphics.hpp
+	<string>
+	<vector>
+
+1651416544 c:\users\szgeza\desktop\ppke\bevprog\bevprog_ii\main\widgets-main\widget.hpp
+	"graphics.hpp"
+	"application.hpp"
+
+1651416320 source:c:\users\szgeza\desktop\ppke\bevprog\bevprog_ii\main\widgets-main\button.cpp
+	"button.hpp"
+
+1651420503 c:\users\szgeza\desktop\ppke\bevprog\bevprog_ii\main\widgets-main\button.hpp
+	"widget.hpp"
+
+1650630826 source:c:\users\szgeza\desktop\ppke\bevprog\bevprog_ii\main\widgets-main\dropdown.cpp
+	"dropdown.hpp"
+	<sstream>
+	<math.h>
+
+1650630798 c:\users\szgeza\desktop\ppke\bevprog\bevprog_ii\main\widgets-main\dropdown.hpp
+	"widget.hpp"
+	"button.hpp"
+
+1651415136 source:c:\users\szgeza\desktop\ppke\bevprog\bevprog_ii\main\widgets-main\main.cpp
+	"spinbox.hpp"
+	"dropdown.hpp"
+	"textreader.hpp"
+	<vector>
+	<time.h>
+	<fstream>
+
+1650629808 c:\users\szgeza\desktop\ppke\bevprog\bevprog_ii\main\widgets-main\spinbox.hpp
+	"widget.hpp"
+	"button.hpp"
+
+1651415280 c:\users\szgeza\desktop\ppke\bevprog\bevprog_ii\main\widgets-main\textreader.hpp
+	<widget.hpp>
+	"button.hpp"
+
+1650628038 source:c:\users\szgeza\desktop\ppke\bevprog\bevprog_ii\main\widgets-main\spinbox.cpp
+	"spinbox.hpp"
+	<sstream>
+
+1651424061 source:c:\users\szgeza\desktop\ppke\bevprog\bevprog_ii\main\widgets-main\textreader.cpp
+	"textreader.hpp"
+	<fstream>
+	<iostream>
+
+1651416537 source:c:\users\szgeza\desktop\ppke\bevprog\bevprog_ii\main\widgets-main\widget.cpp
+	"widget.hpp"
+	"graphics.hpp"
+
+1650629394 source:d:\ppke\bevprog\bevprog_ii\main\9\hazi\application.cpp
+	"application.hpp"
+	"widget.hpp"
+
+1650623382 d:\ppke\bevprog\bevprog_ii\main\9\hazi\application.hpp
+	<vector>
+	"graphics.hpp"
+
+1650057552 d:\ppke\bevprog\bevprog_ii\main\9\hazi\include\graphics.hpp
+	<string>
+	<vector>
+
+1651416546 d:\ppke\bevprog\bevprog_ii\main\9\hazi\widget.hpp
+	"graphics.hpp"
+	"application.hpp"
+
+1651416322 source:d:\ppke\bevprog\bevprog_ii\main\9\hazi\button.cpp
+	"button.hpp"
+
+1651420504 d:\ppke\bevprog\bevprog_ii\main\9\hazi\button.hpp
+	"widget.hpp"
+
+1650630826 source:d:\ppke\bevprog\bevprog_ii\main\9\hazi\dropdown.cpp
+	"dropdown.hpp"
+	<sstream>
+	<math.h>
+
+1650630798 d:\ppke\bevprog\bevprog_ii\main\9\hazi\dropdown.hpp
+	"widget.hpp"
+	"button.hpp"
+
+1651693228 source:d:\ppke\bevprog\bevprog_ii\main\9\hazi\main.cpp
+	"spinbox.hpp"
+	"dropdown.hpp"
+	"textreader.hpp"
+	<vector>
+	<time.h>
+	<fstream>
+
+1650629808 d:\ppke\bevprog\bevprog_ii\main\9\hazi\spinbox.hpp
+	"widget.hpp"
+	"button.hpp"
+
+1651415282 d:\ppke\bevprog\bevprog_ii\main\9\hazi\textreader.hpp
+	<widget.hpp>
+	"button.hpp"
+
+1650628038 source:d:\ppke\bevprog\bevprog_ii\main\9\hazi\spinbox.cpp
+	"spinbox.hpp"
+	<sstream>
+
+1651424062 source:d:\ppke\bevprog\bevprog_ii\main\9\hazi\textreader.cpp
+	"textreader.hpp"
+	<fstream>
+	<iostream>
+
+1651416538 source:d:\ppke\bevprog\bevprog_ii\main\9\hazi\widget.cpp
+	"widget.hpp"
+	"graphics.hpp"
+
