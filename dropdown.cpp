@@ -5,7 +5,7 @@
 using namespace genv;
 
 
-Dropdown::Dropdown(Application* _parent, int _x, int _y, int _sx, int _sy,
+Dropdown::Dropdown(Gamemaster* _parent, int _x, int _y, int _sx, int _sy,
                          std::vector<std::string> _elements,
                          int _e):
                          Widget(_parent, _x, _y, _sx, _sy),

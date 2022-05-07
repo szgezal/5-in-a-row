@@ -12,7 +12,7 @@ protected:
     ButtonDown* btn2;
 
 public:
-    Spinbox(Application*, int, int, int, int, int, int);
+    Spinbox(Gamemaster*, int, int, int, int, int, int);
     void draw() override;
     void handle(genv::event, Widget*) override;
     int getNum();

@@ -4,13 +4,11 @@ using namespace genv;
 
 
 //Button
-Button::Button(Application* _parent, int _x, int _y, int _sx, int _sy): Widget(_parent, _x, _y, _sx, _sy) {}
+Button::Button(Gamemaster* _parent, int _x, int _y, int _sx, int _sy): Widget(_parent, _x, _y, _sx, _sy) {}
 
 Button::Button(Spinbox* _parent, int _x, int _y, int _sx, int _sy): Widget(_parent, _x, _y, _sx, _sy) {}
 
 Button::Button(Dropdown* _parent, int _x, int _y, int _sx, int _sy): Widget(_parent, _x, _y, _sx, _sy) {}
-
-Button::Button(Textreader* _parent, int _x, int _y, int _sx, int _sy): Widget(_parent, _x, _y, _sx, _sy) {}
 
 void Button::handle(genv::event ev, Widget* w) {
     if (this->on_widget(ev) && ev.button > 0)
@@ -21,7 +19,7 @@ void Button::handle(genv::event ev, Widget* w) {
 
 
 //Simple Button
-SimpleButton::SimpleButton(Application* _parent, int _x, int _y, int _sx, int _sy):
+SimpleButton::SimpleButton(Gamemaster* _parent, int _x, int _y, int _sx, int _sy):
                                  Button(_parent, _x, _y, _sx, _sy) {}
 
 void SimpleButton::draw() {
@@ -40,8 +38,6 @@ bool SimpleButton::on_widget(genv::event ev) {
 //ButtonUp
 ButtonUp::ButtonUp(Spinbox* _parent, int _x, int _y, int _sx, int _sy): Button(_parent, _x, _y, _sx, _sy) {}
 
-ButtonUp::ButtonUp(Textreader* _parent, int _x, int _y, int _sx, int _sy): Button(_parent, _x, _y, _sx, _sy) {}
-
 void ButtonUp::draw() {
     if (down) {
         gout << color(100, 100, 100) << move_to(x, y) << box(size_x, size_y);
@@ -57,8 +53,6 @@ void ButtonUp::draw() {
 
 //ButtonDown
 ButtonDown::ButtonDown(Spinbox* _parent, int _x, int _y, int _sx, int _sy): Button(_parent, _x, _y, _sx, _sy) {}
-
-ButtonDown::ButtonDown(Textreader* _parent, int _x, int _y, int _sx, int _sy): Button(_parent, _x, _y, _sx, _sy) {}
 
 ButtonDown::ButtonDown(Dropdown* _parent, int _x, int _y, int _sx, int _sy): Button(_parent, _x, _y, _sx, _sy) {}
 

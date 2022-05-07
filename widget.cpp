@@ -1,10 +1,10 @@
 #include "widget.hpp"
 #include "graphics.hpp"
 
-Widget::Widget(Application* _parent, int _x, int _y, int _size_x, int _size_y):
+Widget::Widget(Gamemaster* _parent, int _x, int _y, int _size_x, int _size_y):
      parent(_parent), x(_x), y(_y), size_x(_size_x), size_y(_size_y)
 {
-    _parent->add_widget(this);
+
 }
 
 Widget::Widget(Spinbox* _parent, int _x, int _y, int _size_x, int _size_y):
@@ -19,8 +19,8 @@ Widget::Widget(Dropdown* _parent, int _x, int _y, int _size_x, int _size_y):
 
 }
 
-Widget::Widget(Textreader* _parent, int _x, int _y, int _size_x, int _size_y):
-     trparent(_parent), x(_x), y(_y), size_x(_size_x), size_y(_size_y)
+Widget::Widget(Tile* _parent, int _x, int _y, int _size_x, int _size_y):
+     tparent(_parent), x(_x), y(_y), size_x(_size_x), size_y(_size_y)
 {
 
 }
