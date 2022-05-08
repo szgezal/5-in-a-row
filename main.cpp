@@ -25,17 +25,6 @@ public:
 //        sl2 = new Dropdown(this, 300, 100, 200, 40, elements2, 6);
 //        sb = new SimpleButton(this, 550, 20, 40, 40);
     }
-
-//    void write(genv::event ev) override {
-//        if (sb->on_widget(ev)) {
-//            std::ofstream f("ellenorzes.txt");
-//            f << spb1->getNum() << ", ";
-//            f << spb2->getNum() << "\n";
-//            f << sl1->getElement() << ", ";
-//            f << sl2->getElement();
-//            f.close();
-//        }
-//    }
 };
 
 
