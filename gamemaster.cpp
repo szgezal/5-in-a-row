@@ -61,6 +61,9 @@ void Gamemaster::eventloop() {
     }
 }
 
+
+// game logic
+
 bool Gamemaster::valid_move(Tile* focused, genv::event ev) {
 
     int k, l;
@@ -75,7 +78,7 @@ bool Gamemaster::valid_move(Tile* focused, genv::event ev) {
                     k = focused->getIndex()[0];
                     l = focused->getIndex()[1];
                 }
-                if (game_area[k][l]->getState() != "") {
+                if (game_area[k][l]->getState() != "" && focused->getState() == "") {
                     return true;
                 }
             }
@@ -84,8 +87,6 @@ bool Gamemaster::valid_move(Tile* focused, genv::event ev) {
     } else
         return true;
 }
-
-// játék logika:
 
 bool Gamemaster::is_in_progress(genv::event ev) {
     if (!five_in_a_row(ev))
@@ -142,6 +143,9 @@ bool Gamemaster::five_in_a_row(genv::event ev) {
             }
     return false;
 }
+
+
+// creating tiles
 
 void Gamemaster::create_game_area(int area_size) {
     int size = area_size/2.0;
