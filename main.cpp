@@ -4,7 +4,7 @@
 #include <time.h>
 
 
-class App : public Gamemaster {
+class Game : public Gamemaster {
 protected:
 //    Spinbox* spb1;
 //    Spinbox* spb2;
@@ -15,8 +15,8 @@ protected:
 
 
 public:
-    App() : Gamemaster() {
-        this->create_game_area(17);
+    Game() : Gamemaster() {
+        this->create_game_area(15);
 //        std::vector<std::string> elements1 = {"Text 0","Text 1","Text 2","Text 3","Text 4","Text 5","Text 6","Text 7","Text 8","Text 9"};
 //        std::vector<std::string> elements2 = {"Text 10","Text 11","Text 12","Text 13","Text 14","Text 15","Text 16","Text 17","Text 18","Text 19"};
 //        spb1 = new Spinbox(this, 20, 20, 200, 40, -20, 20);
@@ -32,9 +32,9 @@ int main()
 {
     srand(time(NULL));
 
-    App app;
+    Game game;
 
-    app.eventloop();
+    game.eventloop();
 
     return 0;
 }

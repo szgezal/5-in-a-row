@@ -7,13 +7,15 @@ class Tile : public Widget
 {
 protected:
     std::string state;
+    std::vector<int> index;
 public:
-    Tile(Gamemaster*, int, int, int, int, std::string);
+    Tile(Gamemaster*, int, int, int, int, std::string, int, int);
     void draw() override;
     void handle(genv::event, Widget*) override;
-    void on_click(std::string);
-    void on_click();
+    void onClick(std::string);
+    void onClick();
     std::string getState();
+    std::vector<int> getIndex();
 };
 
 #endif // TILE_HPP

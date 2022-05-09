@@ -1,9 +1,13 @@
 #include "tile.hpp"
 using namespace genv;
 
-Tile::Tile(Gamemaster* _parent, int _x, int _y, int _size_x, int _size_y, std::string _state) : Widget(_parent, _x, _y, _size_x, _size_y), state(_state)
+Tile::Tile(Gamemaster* _parent, int _x, int _y, int _size_x, int _size_y, std::string _state, int _i, int _j):
+           Widget(     _parent,     _x,     _y,     _size_x,     _size_y),      state(_state)
 {
-
+    std::vector<int> v;
+    v.push_back(_i);
+    v.push_back(_j);
+    index = v;
 }
 
 void Tile::draw() {
@@ -36,13 +40,17 @@ void Tile::draw() {
 
 void Tile::handle(genv::event, Widget *) {}
 
-void Tile::on_click(std::string turn) {
-    if (state == "" && turn == "x")
+void Tile::onClick(std::string player) {
+    if (state == "" && player == "x")
         state = "x";
-    else if (state == "" && turn == "o")
+    else if (state == "" && player == "o")
         state = "o";
 }
 
 std::string Tile::getState() {
     return state;
+}
+
+std::vector<int> Tile::getIndex() {
+    return index;
 }
