@@ -1,40 +1,46 @@
 #include "spinbox.hpp"
 #include "dropdown.hpp"
+#include "statictext.hpp"
 #include "gamemaster.hpp"
-#include <time.h>
 
 
 class Game : public Gamemaster {
 protected:
-//    Spinbox* spb1;
-//    Spinbox* spb2;
-//    Dropdown* sl1;
-//    Dropdown* sl2;
-//    SimpleButton* sb;
-//    Textreader* tr;
-
+    Spinbox* spb1;
+    Dropdown* sl1;
+    SimpleButton* sb;
+    StaticText* title;
+    StaticText* tshadow;
 
 public:
     Game() : Gamemaster() {
-        this->create_game_area(15);
-//        std::vector<std::string> elements1 = {"Text 0","Text 1","Text 2","Text 3","Text 4","Text 5","Text 6","Text 7","Text 8","Text 9"};
-//        std::vector<std::string> elements2 = {"Text 10","Text 11","Text 12","Text 13","Text 14","Text 15","Text 16","Text 17","Text 18","Text 19"};
-//        spb1 = new Spinbox(this, 20, 20, 200, 40, -20, 20);
-//        spb2 = new Spinbox(this, 300, 20, 200, 40, -30, 30);
-//        sl1 = new Dropdown(this, 20, 100, 200, 40, elements1, 4);
-//        sl2 = new Dropdown(this, 300, 100, 200, 40, elements2, 6);
-//        sb = new SimpleButton(this, 550, 20, 40, 40);
+        tshadow = new StaticText(this, 155, -45, 300, 300, "Gomoku", 0, 0, 50, 60);
+        title = new StaticText(this, 160, -50, 300, 300, "Gomoku", 0, 0, 100, 60);
+        std::vector<std::string> elements1 = {"2 player", "Single player (coming soon)"};
+        spb1 = new Spinbox(this, 90, 200, 200, 40, 15, 30);
+        sl1 = new Dropdown(this, 300, 200, 250, 40, elements1, 2);
+        sb = new SimpleButton(this, 270, 400, 60, 40);
+    }
+
+    int getSelectedNum() override {
+        return spb1->getNum();
+    }
+
+    std::string getSelectedElement() override {
+        return sl1->getElement();
+    }
+
+    bool play_button_clicked() override{
+        return sb->clicked();
     }
 };
 
 
 int main()
 {
-    srand(time(NULL));
-
     Game game;
 
-    game.eventloop();
+    game.main_loop();
 
     return 0;
 }

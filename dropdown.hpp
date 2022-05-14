@@ -1,7 +1,6 @@
 #ifndef DROPDOWN_H
 #define DROPDOWN_H
 
-#include "widget.hpp"
 #include "button.hpp"
 
 class Dropdown : public Widget

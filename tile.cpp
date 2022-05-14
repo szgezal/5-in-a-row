@@ -51,6 +51,17 @@ std::string Tile::getState() {
     return state;
 }
 
+void Tile::setState(std::string s) {
+    state = s;
+}
+
+std::vector<int> Tile::getCenterKoord() {
+    std::vector<int> v;
+    v.push_back(x + size_x/2);
+    v.push_back(y + size_y/2);
+    return v;
+}
+
 std::vector<int> Tile::getIndex() {
     return index;
 }

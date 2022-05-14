@@ -1,5 +1,4 @@
 #include "dropdown.hpp"
-#include <sstream>
 #include <math.h>
 
 using namespace genv;
@@ -20,7 +19,7 @@ Dropdown::Dropdown(Gamemaster* _parent, int _x, int _y, int _sx, int _sy,
 void Dropdown::draw() {
 
     if (!this->open) {
-        gout << color(0, 0, 0) << move_to(x, y) << box(size_x, this->size_y * (this->e + 1));
+        gout << color(255, 255, 255) << move_to(x, y) << box(size_x, this->size_y * (this->e + 1));
         gout << color(150, 150, 150) << move_to(x, y) << box(size_x, size_y);
         gout << color(200, 200, 200) << move_to(x + 4, y + 4) << box(size_x - 8, size_y - 8);
         gout << color(0, 0, 0) << move_to(x + size_x/2 - original_size_y/4 - gout.twidth(selected)/2,

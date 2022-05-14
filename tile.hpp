@@ -15,7 +15,9 @@ public:
     void onClick(std::string);
     void onClick();
     std::string getState();
+    void setState(std::string);
     std::vector<int> getIndex();
+    std::vector<int> getCenterKoord();
 };
 
 #endif // TILE_HPP

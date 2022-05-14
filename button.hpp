@@ -21,6 +21,7 @@ public:
     SimpleButton(Gamemaster*, int, int, int, int);
     void draw() override;
     bool on_widget(genv::event) override;
+    bool clicked();
 };
 
 class ButtonUp : public Button {
