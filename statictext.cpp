@@ -10,7 +10,8 @@ StaticText::StaticText(Gamemaster* _parent, int _x, int _y, int _sx, int _sy, st
 
 void StaticText::draw() {
     gout.load_font("LiberationSans-Regular.ttf", size);
-    gout << color(255, 255, 255) << move_to(x, y) << box(size_x, size_y);
+    if (txt != "Gomoku")
+        gout << color(255, 255, 255) << move_to(x, y) << box(size_x, size_y);
     gout << color(r, g, b) << move_to(x + size_x/2 - gout.twidth(txt)/2, y + size_y/2 - gout.cascent() + 2*gout.cdescent()) << text(txt);
     gout.load_font("LiberationSans-Regular.ttf", 16);
 }

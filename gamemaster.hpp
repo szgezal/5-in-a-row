@@ -17,6 +17,7 @@ protected:
     Tile* tfocused;
     Widget* wfocused;
     bool is_draw = false;
+    bool com_wins;
 
 public:
     Gamemaster();
@@ -26,6 +27,7 @@ public:
     bool five_in_a_row();
     bool valid_move(Tile*, genv::event);
     void add_widget(Widget*);
+    void com(Tile*, genv::event);
     virtual int getSelectedNum() = 0;
     virtual std::string getSelectedElement() = 0;
     virtual bool play_button_clicked() = 0;

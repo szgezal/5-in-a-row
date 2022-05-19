@@ -3,7 +3,6 @@
 
 using namespace genv;
 
-
 Dropdown::Dropdown(Gamemaster* _parent, int _x, int _y, int _sx, int _sy,
                          std::vector<std::string> _elements,
                          int _e):
