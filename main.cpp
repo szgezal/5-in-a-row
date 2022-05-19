@@ -1,56 +1,50 @@
 #include "spinbox.hpp"
 #include "dropdown.hpp"
-#include "textreader.hpp"
-#include <vector>
-#include <time.h>
-#include <fstream>
+#include "statictext.hpp"
+#include "gamemaster.hpp"
 
 
-const int width = 800, height = 600;
-
-
-class App : public Application {
+class Game : public Gamemaster {
 protected:
     Spinbox* spb1;
-//    Spinbox* spb2;
-//    Dropdown* sl1;
-//    Dropdown* sl2;
-//    SimpleButton* sb;
-//    Textreader* tr;
-
+    Dropdown* sl1;
+    SimpleButton* sb;
+    StaticText* title;
+    StaticText* tshadow;
+    StaticText* text1;
+    StaticText* text2;
 
 public:
-    App(int width, int height) : Application(width, height) {
-//        std::vector<std::string> elements1 = {"Text 0","Text 1","Text 2","Text 3","Text 4","Text 5","Text 6","Text 7","Text 8","Text 9"};
-//        std::vector<std::string> elements2 = {"Text 10","Text 11","Text 12","Text 13","Text 14","Text 15","Text 16","Text 17","Text 18","Text 19"};
-        spb1 = new Spinbox(this, 20, 20, 200, 40, -20, 20);
-//        spb2 = new Spinbox(this, 300, 20, 200, 40, -30, 30);
-//        sl1 = new Dropdown(this, 20, 100, 200, 40, elements1, 4);
-//        sl2 = new Dropdown(this, 300, 100, 200, 40, elements2, 6);
-//        sb = new SimpleButton(this, 550, 20, 40, 40);
-//        tr = new Textreader(this, 20, 180, 740, 400, "main.cpp");
+    Game() : Gamemaster() {
+        tshadow = new StaticText(this, 155, -5, 300, 200, "Gomoku", 0, 0, 50, 60);
+        title = new StaticText(this, 160, -10, 300, 200, "Gomoku", 0, 0, 100, 60);
+        text1 = new StaticText(this, 98, 160, 150, 40, "Select game area size:", 0, 0, 0, 16);
+        text2 = new StaticText(this, 295, 160, 150, 40, "Select game mode:", 0, 0, 0, 16);
+        std::vector<std::string> elements1 = {"2 player","Single player"};
+        spb1 = new Spinbox(this, 90, 200, 200, 40, 15, 30);
+        sl1 = new Dropdown(this, 300, 200, 250, 40, elements1, 2);
+        sb = new SimpleButton(this, 270, 350, 60, 40);
     }
 
-//    void write(genv::event ev) override {
-//        if (sb->on_widget(ev)) {
-//            std::ofstream f("ellenorzes.txt");
-//            f << spb1->getNum() << ", ";
-//            f << spb2->getNum() << "\n";
-//            f << sl1->getElement() << ", ";
-//            f << sl2->getElement();
-//            f.close();
-//        }
-//    }
+    int getSelectedNum() override {
+        return spb1->getNum();
+    }
+
+    std::string getSelectedElement() override {
+        return sl1->getElement();
+    }
+
+    bool play_button_clicked() override{
+        return sb->clicked();
+    }
 };
 
 
 int main()
 {
-    srand(time(NULL));
+    Game game;
 
-    App app(width, height);
-
-    app.eventloop();
+    game.main_loop();
 
     return 0;
 }
